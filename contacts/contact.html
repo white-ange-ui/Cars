@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Location de Voitures</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>C</span>ars.</a>
+    <div class="menuToggle" onclick="toggleMenu();">
+        <img src="/im.voiture/menu2.png" alt="" width="40px" height="40px">
+    </div>
+    <ul class="navbar">
+      <li><a href="../index.html" onclick="toggleMenu();">Accueil</a></li>
+      <li><a href="../propos/propos.html" onclick="toggleMenu();">À propos</a></li>
+      <li><a href="../voitures/cars.html" onclick="toggleMenu();">Nos Voitures</a></li>
+      <li><a href="../avis_clients/avis.html" onclick="toggleMenu();">Avis Clients</a></li>
+      <li><a href="../contacts/contact.html" onclick="toggleMenu();">Contact</a></li>
+      <a href="../contacts/contact.html" class="btn-reserve" onclick="toggleMenu();">Réservez Maintenant</a>
+      <!-- <a href="/portfolio.html" class="btn4">Revenir</a> -->
+
+  </ul>
+</header>
+
+<section class="contact" id="contact">
+    <div class="titre noir">
+        <h2 class="titre-texte"><span>C</span>ontactez-Nous</h2>
+        <p>Nous sommes là pour répondre à toutes vos questions.</p>
+    </div>
+    <div class="contactform">
+        <h3>Envoyer un message</h3>
+        <div class="inputboite">
+            <input type="text" placeholder="Nom">
+        </div>
+        <div class="inputboite">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="inputboite">
+            <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" value="Envoyer">
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    const header = document.querySelector("header");
+
+if (window.location.pathname.endsWith("contact.html")) {
+        header.classList.add("text-white");
+    } else {
+    header.classList.remove("text-white");
+}
+
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

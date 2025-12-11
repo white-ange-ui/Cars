@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Location de Voitures</title>
+</head>
+<body>
+<header>
+    <a href="#" class="logo"><span>C</span>ars.</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">À propos</a></li>
+        <li><a href="#voitures" onclick="toggleMenu();">Nos Voitures</a></li>
+        <li><a href="#temoignage" onclick="toggleMenu();">Avis Clients</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <a href="#" class="btn-reserve" onclick="toggleMenu();">Réservez Maintenant</a>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>Trouvez la voiture parfaite pour vos besoins</h2>
+        <p>Nous offrons une large gamme de véhicules à des prix compétitifs. Réservez votre prochaine voiture dès aujourd'hui.</p>
+        <a href="#voitures" class="btn1">Voir les Voitures</a>
+        <a href="#contact" class="btn2">Nous Contacter</a>
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>À</span> Propos de Nous</h2>
+            <p>Chez Cars, nous nous engageons à fournir des véhicules fiables et confortables adaptés à tous vos besoins. Que ce soit pour des affaires ou des loisirs, nous avons ce qu'il vous faut.</p>
+        </div>
+        <!-- a revoir -->
+        <div class="col50">
+            <div class="img">
+                <!-- <img src="./im.voiture/Background-home.png" alt="Voiture de location"> -->
+            </div>
+        </div>
+    </div>
+</section>
+<section class="voitures" id="voitures">        
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#fb911f" fill-opacity="1" d="M0,256L60,250.7C120,245,240,235,360,234.7C480,235,600,245,720,224C840,203,960,149,1080,149.3C1200,149,1320,203,1380,229.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+
+    <div class="titre">
+        <h2 class="titre-texte"><span>N</span>os Voitures</h2>
+        <p>Découvrez notre sélection de véhicules pour chaque occasion.</p>
+    </div>
+    <div class="contenu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fb911f" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,181.3C480,213,600,267,720,272C840,277,960,235,1080,186.7C1200,139,1320,85,1380,58.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
+
+        <div class="box">
+            <div class="imbox">
+                <img src="./im.voiture/car1.jpg" alt="SUV">
+            </div>
+            <div class="text">
+                <h3>SUV Confort</h3>
+                <p>Ici toutes les descriptions de le voiture concerner</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./im.voiture/car2.jpg" alt="Berline">
+            </div>
+            <div class="text">
+                <h3>Berline Élégante</h3>
+                <p>Ici toutes les descriptions de le voiture concerner</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./im.voiture/car3.jpg" alt="Voiture Compacte">
+            </div>
+            <div class="text">
+                <h3>Compacte Pratique</h3>
+                <div class="elements">
+                    <p>Ici toutes les descriptions de le voiture concerner</p>
+                    <p>Ici toutes les icones pour l'affichage des vehicules</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./im.voiture/car4.jpg" alt="Cabriolet">
+            </div>
+            <div class="text">
+                <h3>Cabriolet Luxe</h3>
+                <p>Ici toutes les descriptions de le voiture concerner</p>
+            </div>
+        </div>
+        <!-- <div class="cadre"> -->
+            <div class="carte">
+                <div class="img-cadre">
+              <img src="./im.voiture/mercedes-amg.jpg" class="carte-img" alt="Berline">
+                </div>
+              <div class="carte-body">
+                <h3>MERCEDES AMG</h3>
+                  <p >J'espere que ca va reussir ce que je veux faire</p>
+                  <p>Ici toutes les descriptions de le voiture concerner</p>
+                  <div class="titre">
+                    <a href="#" class="btn1">Commander</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carte">
+                <div class="img-cadre">
+              <img src="./im.voiture/mercedes-brabus.jpg" class="carte-img" alt="Berline">
+                </div>
+              <div class="carte-body">
+                <h3>MERCEDES BRABUS</h3>
+                  <p >J'espere que ca va reussir ce que je veux faire</p>
+                  <p>Ici toutes les descriptions de le voiture concerner</p>
+                  <div class="titre">
+                    <a href="#" class="btn3">Commander</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carte">
+              <img src="./im.voiture/Audi-q5.jpg" class="carte-img" alt="Berline">
+              <div class="carte-body">
+                <h3>Audi Q5 Sportback</h3>
+                  <p >J'espere que ca va reussir ce que je veux faire</p>
+                  <p>Ici toutes les descriptions de le voiture concerner</p>
+                  <div class="titre">
+                    <a href="#" class="btn1">Commander</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carte">
+              <img src="./im.voiture/PEUGEOT_E-3008_800x600.avif" class="carte-img" alt="Berline">
+              <div class="carte-body">
+                <h3>Peugeot 3008 </h3>
+                  <p >J'espere que ca va reussir ce que je veux faire</p>
+                  <p>Ici toutes les descriptions de le voiture concerner</p>
+                  <div class="titre">
+                    <a href="#" class="btn1">Commander</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carte">
+              <img src="./im.voiture/suzuki-jimny.jpg" class="carte-img" alt="Berline">
+              <div class="carte-body">
+                <h3>Suzuki Jimny </h3>
+                  <p >J'espere que ca va reussir ce que je veux faire</p>
+                  <p>Ici toutes les descriptions de le voiture concerner</p>
+                  <div class="titre">
+                    <a href="#" class="btn1">Commander</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carte">
+              <img src="./im.voiture/ford-mustang.webp" class="carte-img" alt="Berline">
+                <div class="carte-body">
+                    <h3>Ford Mustang Fastback</h3>
+                    <p >J'espere que ca va reussir ce que je veux faire</p>
+                    <p>Ici toutes les descriptions de le voiture concerner</p>
+                    <div class="titre">
+                        <a href="#" class="btn1">Commander</a>
+                    </div>
+              </div>
+            </div>
+          </div>
+    <!-- </div> -->
+
+   
+    <!-- BUTTON -->
+
+    <!-- <div class="titre">
+        <a href="#" class="btn1">Voir Plus</a>
+    </div> -->
+
+    <!-- FIN BOUTTON -->
+</section>
+
+<section class="temoignage" id="temoignage">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#fb911f" fill-opacity="1" d="M0,256L8.6,266.7C17.1,277,34,299,51,272C68.6,245,86,171,103,154.7C120,139,137,181,154,181.3C171.4,181,189,139,206,122.7C222.9,107,240,117,257,144C274.3,171,291,213,309,208C325.7,203,343,149,360,133.3C377.1,117,394,139,411,128C428.6,117,446,75,463,90.7C480,107,497,181,514,202.7C531.4,224,549,192,566,192C582.9,192,600,224,617,213.3C634.3,203,651,149,669,160C685.7,171,703,245,720,250.7C737.1,256,754,192,771,144C788.6,96,806,64,823,74.7C840,85,857,139,874,176C891.4,213,909,235,926,213.3C942.9,192,960,128,977,138.7C994.3,149,1011,235,1029,272C1045.7,309,1063,299,1080,250.7C1097.1,203,1114,117,1131,96C1148.6,75,1166,117,1183,122.7C1200,128,1217,96,1234,117.3C1251.4,139,1269,213,1286,234.7C1302.9,256,1320,224,1337,213.3C1354.3,203,1371,213,1389,197.3C1405.7,181,1423,139,1431,117.3L1440,96L1440,0L1431.4,0C1422.9,0,1406,0,1389,0C1371.4,0,1354,0,1337,0C1320,0,1303,0,1286,0C1268.6,0,1251,0,1234,0C1217.1,0,1200,0,1183,0C1165.7,0,1149,0,1131,0C1114.3,0,1097,0,1080,0C1062.9,0,1046,0,1029,0C1011.4,0,994,0,977,0C960,0,943,0,926,0C908.6,0,891,0,874,0C857.1,0,840,0,823,0C805.7,0,789,0,771,0C754.3,0,737,0,720,0C702.9,0,686,0,669,0C651.4,0,634,0,617,0C600,0,583,0,566,0C548.6,0,531,0,514,0C497.1,0,480,0,463,0C445.7,0,429,0,411,0C394.3,0,377,0,360,0C342.9,0,326,0,309,0C291.4,0,274,0,257,0C240,0,223,0,206,0C188.6,0,171,0,154,0C137.1,0,120,0,103,0C85.7,0,69,0,51,0C34.3,0,17,0,9,0L0,0Z"></path>
+    </svg>
+    
+    <div class="titre blanc">
+        <h2 class="titre-texte">Avis de Nos <span>C</span>lients</h2>
+        <p>Découvrez ce que nos clients disent de leurs expériences avec nous.</p>
+    </div>
+    <div class="contenu">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fb911f" fill-opacity="1" d="M0,0L8.6,10.7C17.1,21,34,43,51,80C68.6,117,86,171,103,170.7C120,171,137,117,154,96C171.4,75,189,85,206,106.7C222.9,128,240,160,257,181.3C274.3,203,291,213,309,229.3C325.7,245,343,267,360,272C377.1,277,394,267,411,250.7C428.6,235,446,213,463,181.3C480,149,497,107,514,96C531.4,85,549,107,566,101.3C582.9,96,600,64,617,96C634.3,128,651,224,669,224C685.7,224,703,128,720,96C737.1,64,754,96,771,96C788.6,96,806,64,823,80C840,96,857,160,874,197.3C891.4,235,909,245,926,218.7C942.9,192,960,128,977,90.7C994.3,53,1011,43,1029,37.3C1045.7,32,1063,32,1080,69.3C1097.1,107,1114,181,1131,229.3C1148.6,277,1166,299,1183,304C1200,309,1217,299,1234,266.7C1251.4,235,1269,181,1286,154.7C1302.9,128,1320,128,1337,133.3C1354.3,139,1371,149,1389,138.7C1405.7,128,1423,96,1431,80L1440,64L1440,320L1431.4,320C1422.9,320,1406,320,1389,320C1371.4,320,1354,320,1337,320C1320,320,1303,320,1286,320C1268.6,320,1251,320,1234,320C1217.1,320,1200,320,1183,320C1165.7,320,1149,320,1131,320C1114.3,320,1097,320,1080,320C1062.9,320,1046,320,1029,320C1011.4,320,994,320,977,320C960,320,943,320,926,320C908.6,320,891,320,874,320C857.1,320,840,320,823,320C805.7,320,789,320,771,320C754.3,320,737,320,720,320C702.9,320,686,320,669,320C651.4,320,634,320,617,320C600,320,583,320,566,320C548.6,320,531,320,514,320C497.1,320,480,320,463,320C445.7,320,429,320,411,320C394.3,320,377,320,360,320C342.9,320,326,320,309,320C291.4,320,274,320,257,320C240,320,223,320,206,320C188.6,320,171,320,154,320C137.1,320,120,320,103,320C85.7,320,69,320,51,320C34.3,320,17,320,9,320L0,320Z"></path>
+        </svg>
+        
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/client1.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Un service rapide et des voitures en excellent état. Je recommande fortement !</p>
+                <h3>X </h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/client2.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>La réservation a été simple et le personnel très professionnel. Merci AutoLoc !</p>
+                <h3>y</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/client2.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>La réservation a été simple et le personnel très professionnel. Merci AutoLoc !</p>
+                <h3>Z</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="titre noir">
+        <h2 class="titre-texte"><span>C</span>ontactez-Nous</h2>
+        <p>Nous sommes là pour répondre à toutes vos questions.</p>
+    </div>
+    <div class="contactform">
+        <h3>Envoyer un message</h3>
+        <div class="inputboite">
+            <input type="text" placeholder="Nom">
+        </div>
+        <div class="inputboite">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="inputboite">
+            <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" value="Envoyer">
+        </div>
+    </div>
+</section>
+
+<div class="copyright">
+    <p>© 2024 Cars. Tous droits réservés.</p>
+</div>
+<script type="text/javascript">
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+ <!-- a revoir -->
+ <div class="col50">
+    <div class="img">
+        <!-- <img src="./im.voiture/Background-home.png" alt="Voiture de location"> -->
+    </div>
+</div>

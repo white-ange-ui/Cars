@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Location de Voitures</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>C</span>ars.</a>
+        <div class="menuToggle" onclick="toggleMenu();">
+        <img src="/im.voiture/menu2.png" alt="" width="40px" height="40px">
+
+        </div>
+        <ul class="navbar">
+        <li><a href="../index.html" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="../propos/propos.html" onclick="toggleMenu();">À propos</a></li>
+        <li><a href="../voitures/cars.html" onclick="toggleMenu();">Nos Voitures</a></li>
+        <li><a href="../avis_clients/avis.html" onclick="toggleMenu();">Avis Clients</a></li>
+        <li><a href="../contacts/contact.html" onclick="toggleMenu();">Contact</a></li>
+        <a href="../contacts/contact.html" class="btn-reserve" onclick="toggleMenu();">Réservez Maintenant</a>
+        <!-- <a href="../portfolio.html" class="btn4">Revenir</a> -->
+
+      </ul>
+    </header>
+
+<section class="temoignage" id="temoignage">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#1397d0" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,192C480,203,600,149,720,144C840,139,960,181,1080,186.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+    
+    <div class="titre blanc">
+        <h2 class="titre-texte">Avis de Nos <span>C</span>lients</h2>
+        <p>Découvrez ce que nos clients disent de leurs expériences avec nous.</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="../im.voiture/client1.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Un service rapide et des voitures en excellent état. Je recommande fortement !</p>
+                <h3>Andrea</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../im.voiture/client3.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Agréable acceuil, service rapide efficace, proposition adaptée au besoin du client. Merci Cars !</p>
+                <h3>Jean Antoine</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../im.voiture/client2.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>La réservation a été simple et le personnel très professionnel. Merci Cars !</p>
+                <h3>Chris Sebastien</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="copyright">
+        <p>© 2024 Cars. Tous droits réservés. Petit truc pour vous enjailler ❤️</p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
